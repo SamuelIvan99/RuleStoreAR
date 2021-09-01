@@ -19,7 +19,7 @@ namespace ARProject.Services
             new Product()
             {
                 Id = 2,
-                Source = "",
+                Source = ".\\assets\\models\\model.glb",
                 IOSSource = "",
                 Image = "https://images.freeimages.com/images/large-previews/fde/aliens-1-1373417.jpg",
                 QRSource = "https://api.qrserver.com/v1/create-qr-code/?data=https://192.168.0.98:44352/Product/2&amp;size=100x100"
