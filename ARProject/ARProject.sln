@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARProject", "ARProject\ARPr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARProject.Services", "ARProject.Services\ARProject.Services.csproj", "{5384FE22-0ACB-49F1-A24D-95F79A886EDC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARProject.Web", "ARProject.Web\ARProject.Web.csproj", "{BA7EBD05-373A-4838-96DB-45A17E1A525F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5384FE22-0ACB-49F1-A24D-95F79A886EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5384FE22-0ACB-49F1-A24D-95F79A886EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5384FE22-0ACB-49F1-A24D-95F79A886EDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA7EBD05-373A-4838-96DB-45A17E1A525F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA7EBD05-373A-4838-96DB-45A17E1A525F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA7EBD05-373A-4838-96DB-45A17E1A525F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA7EBD05-373A-4838-96DB-45A17E1A525F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
