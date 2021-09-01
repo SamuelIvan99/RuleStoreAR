@@ -1,26 +1,25 @@
-﻿using ARProject.Web.Models;
+﻿using ARProject.Models;
+using ARProject.Services;
+using ARProject.Web.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ARProject.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private IProductService _productService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IProductService productService)
         {
-            _logger = logger;
+            _productService = productService;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var products = new List<Product>(_productService.GetAll());
+            return View(products);
         }
 
         public IActionResult Privacy()

@@ -11,5 +11,11 @@
       "library": "@google/model-viewer@1.8.0",
       "destination": "wwwroot/lib/google/model-viewer/"
     }
-  ]
+  ,
+{
+  "provider": "unpkg",
+  "library": "focus-visible@5.2.0",
+  "destination": "wwwroot/lib/focus-visible/"
+}
+]
 }

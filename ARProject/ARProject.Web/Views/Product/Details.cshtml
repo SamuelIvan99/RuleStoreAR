@@ -1,0 +1,26 @@
+﻿@model ARProject.Models.Product
+
+@{
+    ViewData["Title"] = "Product Page";
+}
+
+<h1>Product @Model.Id</h1>
+
+<div class="text-center">
+    <div id="card">
+        <model-viewer src=@Model.Source
+                      ios-src=@Model.IOSSource
+                      poster=@Model.Image
+                      alt="A 3D model of an astronaut"
+                      shadow-intensity="1"
+                      camera-controls
+                      auto-rotate ar>
+        </model-viewer>
+    </div>
+    <h3>
+        QR code
+    </h3>
+    <div>
+        <img src=@Model.QRSource/>
+    </div>
+</div>

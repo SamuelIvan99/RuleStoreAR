@@ -1,17 +1,20 @@
-﻿@{
+﻿@model IEnumerable<ARProject.Models.Product>
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <model-viewer src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.glb?1542147958948"
-                  poster="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b%2Fposter-astronaut.png?v=1599079951717"
-                  alt="A 3D model of an astronaut"
-                  shadow-intensity="1"
-                  camera-controls
-                  auto-rotate ar>
-    </model-viewer>
+<h1>Products</h1>
+<div class="justify-content-between col-3">
+    @foreach (var item in Model)
+    {
+        <div class="card">
+            <img class="card-img-top" src="@item.Image" alt="Card image">
+            <div class="card-body">
+                <h5 class="card-title">Product @item.Id</h5>
+                <p class="card-text">More info about product.</p>
+                <a asp-controller="Product" asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary">Details</a>
+            </div>
+        </div>
+    }
 </div>
-
-@section Scripts{
-    <script src="~/lib/google/model-viewer/dist/model-viewer.min.js"></script>
-}
