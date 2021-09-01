@@ -19,7 +19,7 @@ namespace ARProject.Services
             new Product()
             {
                 Id = 2,
-                Source = "",
+                Source = "https://modelviewer.dev/shared-assets/models/odd-shape.glb",
                 IOSSource = "",
                 Image = "https://images.freeimages.com/images/large-previews/fde/aliens-1-1373417.jpg",
                 QRSource = "https://api.qrserver.com/v1/create-qr-code/?data=https://192.168.0.98:44352/Product/2&amp;size=100x100"
@@ -27,7 +27,7 @@ namespace ARProject.Services
             new Product()
             {
                 Id = 3,
-                Source = "",
+                Source = "https://modelviewer.dev/shared-assets/models/Horse.glb",
                 IOSSource = "",
                 Image = "https://images.sadhguru.org/sites/default/files/media_files/iso/en/64083-natures-temples.jpg",
                 QRSource = "https://api.qrserver.com/v1/create-qr-code/?data=https://192.168.0.98:44352/Product/3&amp;size=100x100"
